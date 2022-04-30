@@ -1,0 +1,14 @@
+name: 'こんにちは、世界'
+description: 'あいさつして、挨拶した時間を表示します'
+inputs:
+  who-to-greet:
+    description: 'あいさつする相手'
+    required: true
+    default: '世界'
+outputs:
+  time:
+    description: 'あいさつした時間'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
